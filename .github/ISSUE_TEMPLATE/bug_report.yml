@@ -1,0 +1,35 @@
+name: Bug report / 问题反馈
+description: Report a reproducible issue using invented goals and tasks / 用虚构内容复现问题
+body:
+  - type: markdown
+    attributes:
+      value: "This report is public. Do not attach real task lists, calendar details, credentials, personal paths, or sensitive screenshots. 本报告公开，请勿上传真实任务清单、日历内容、密钥或个人信息。"
+  - type: input
+    id: version
+    attributes:
+      label: App and macOS version / 应用与系统版本
+      placeholder: Horizon 0.1.0, macOS …, Apple silicon or Intel
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area / 涉及功能
+      options:
+        - My Day / 我的一天
+        - Goals / 目标
+        - Tasks / 任务
+        - Habits / 习惯
+        - Calendar view / 日历视图
+        - Apple Calendar sync / 苹果日历同步
+        - Install or first launch / 安装与首次启动
+        - Other / 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction with invented content / 使用虚构内容复现
+      description: Describe the actions and expected vs actual result. / 写清操作、预期与实际结果。
+    validations:
+      required: true

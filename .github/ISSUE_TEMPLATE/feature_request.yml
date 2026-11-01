@@ -1,0 +1,10 @@
+name: Feature request / 功能建议
+description: Describe a planning task you want to make easier / 描述希望改善的计划场景
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What are you trying to do? / 你想完成什么？
+      description: Use generic examples and leave out personal information. / 请用通用示例，不提供个人信息。
+    validations:
+      required: true
