@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.3.0 — Lists, search, undo, and a deadline countdown
+
+- Lists: your own lists (for example “Groceries” or “Homework”) under the smart lists, with a name, color, and icon, drag to reorder, and “@list” when adding a task. A task can be in a list and linked to a goal. Lists are part of backups; older backups still restore.
+- Search (⌘F): task titles, notes, and steps (completed tasks included), goal, habit, and list names, and Apple Calendar events, grouped, with the matching words marked. An event opens in the month calendar and is pointed out for two seconds.
+- Undo (⌘Z): deleting tasks, goals, lists, and habits, completing, My Day, importance, due date, time, repeat, reminder, goal and list changes, calendar moves, and habit check-ins. Deleting shows an “Undo” bar for a few seconds.
+- Quick add recognizes repeats: “每天”, “每周一三五”, “每两周”, “隔周”, “工作日”, “每月15号”, “每晚9点”, “every mon and thu”, “every other week”, “monthly”, and more. “周末” and “this weekend” mean the coming Saturday.
+- My Day countdown: the next few important due dates, goal deadlines, and exam- or deadline-like calendar events within 30 days, with the days left. Right-click to hide one.
+- Drag any task onto My Day, Important, Planned, a list, or a goal in the sidebar.
+- Due-date menus have “This weekend” (Saturday).
+- Calendar: scroll over the month to turn the page; a month cell that is short of room shows the event's name, shortened, rather than only its time.
+- Back and Forward between lists (⌘[ / ⌘]), a sidebar that slides over narrow windows, a larger toolbar and search field, smoother resizing, and a bigger, bolder “Today” due label. Overdue stays red.
+
+中文：新增自定义清单（名称、颜色、图标、拖动排序，添加任务时用“@清单名”放入；清单会一起备份，旧备份仍可恢复）、⌘F 搜索（任务标题、备注、步骤、目标、习惯、清单和苹果日历日程，结果分组并标出匹配文字，点日程会在月视图中高亮两秒）、⌘Z 撤销（删除、完成、日期、重复、提醒、目标、清单、日历拖动和习惯打卡等，删除后显示几秒“撤销”条）、快速添加识别重复说法（“每周一三五”“隔周”“工作日”“every mon and thu”等）和“周末”、“我的一天”顶部的截止倒计时、把任务拖到左侧栏的列表或目标、截止日期菜单的“这周末”、月视图滚动翻页且格子里优先显示事件名称，以及栏目间返回/前进、窄窗口覆盖式侧栏、更大的工具栏和搜索框、更顺滑的窗口缩放、加大加粗的“今天”截止标签。
+
 ## 0.2.0 — Reminders, repeats, quick capture, and backups
 
 - Repeating tasks: daily, weekdays, weekly, monthly, yearly, or custom (every N days/weeks/months/years, weekly on chosen days). Completing one creates the next with its time and reminder; unchecking takes it back.

@@ -2,7 +2,7 @@
 
 ## Compatibility
 
-- Download: `Horizon-0.2.0-macOS-universal.zip`.
+- Download: `Horizon-0.3.0-macOS-universal.zip`.
 - Includes native `arm64` and `x86_64` executables for Apple silicon and Intel Macs.
 - Both executable slices have a macOS 15.0 minimum deployment target. This is a build target, not a claim of testing every supported OS.
 - Checked on the development Apple silicon Mac. Intel hardware, older macOS, and a separate clean Mac have not been tested.
@@ -11,7 +11,7 @@
 
 ## Install and First Launch
 
-1. Download the app ZIP from [v0.2.0](https://github.com/B0yangWong/Horizon-Releases/releases/tag/v0.2.0). The “Source code” assets are documentation archives, not app installers.
+1. Download the app ZIP from [v0.3.0](https://github.com/B0yangWong/Horizon-Releases/releases/tag/v0.3.0). The “Source code” assets are documentation archives, not app installers.
 2. Extract and move `Horizon.app` into Applications. Do not run it from inside the archive.
 3. Open the app. If macOS cannot verify the developer, only proceed if you trust this release. After the first attempt, follow [Apple's manual instructions](https://support.apple.com/en-us/102445) under System Settings → Privacy & Security → Open Anyway, if available. Managed Macs may forbid this. Do not disable Gatekeeper globally or use a script to remove download quarantine.
 4. A warning that the app is damaged or will harm your computer is a reason to stop and report the problem, not an instruction to bypass it.
@@ -35,14 +35,14 @@ The app does not install a background agent or start at login, and it does not r
 Download `SHA256SUMS.txt` from the same release. In Terminal, change to the download folder and run:
 
 ```sh
-shasum -a 256 Horizon-0.2.0-macOS-universal.zip
+shasum -a 256 Horizon-0.3.0-macOS-universal.zip
 ```
 
 Compare the result with the ZIP's entry in `SHA256SUMS.txt`. This detects disagreement with the published file; it is not a digital signature, security audit, or Apple approval.
 
 ## Updates, Backups, and Existing Data
 
-Quit Horizon normally, then replace the app in Applications. Your data stays in `~/Library/Containers/app.horizon.mac/`; do not delete that folder when updating. Data from 0.1.0 opens in 0.2.0 without changes.
+Quit Horizon normally, then replace the app in Applications. Your data stays in `~/Library/Containers/app.horizon.mac/`; do not delete that folder when updating. Data from 0.1.0 and 0.2.0 opens in 0.3.0 without changes.
 
 Horizon keeps one automatic backup file, replaced as you work (Settings → Backup), by default inside that same folder. Choose a folder on another disk if you want the backup to survive losing this one, and use **Export…** to keep a copy from a particular day. Time Machine also covers the container.
 
@@ -62,4 +62,4 @@ Quit the app and move `Horizon.app` to the Trash. Removing the app does not remo
 
 快速记录默认快捷键为 ⌃⌥N，可在“设置 → 快速记录”中修改或关闭；它使用 macOS 标准的全局快捷键服务，不需要“辅助功能”或“输入监控”权限。菜单栏图标也可以在同一页隐藏。
 
-更新时正常退出后替换应用即可，资料保存在 `~/Library/Containers/app.horizon.mac/`，不要删除；0.1.0 的资料可直接在 0.2.0 中打开。自动备份只保留一个文件并随时覆盖，默认也在这个目录里；可以把备份位置改到另一块磁盘，或用“导出…”保存某一天的副本。卸载应用不会删除资料和备份；需要时手动删除上述目录和你自选的备份位置，并在“日历”应用中删除“Horizon”日历。
+更新时正常退出后替换应用即可，资料保存在 `~/Library/Containers/app.horizon.mac/`，不要删除；0.1.0 和 0.2.0 的资料可直接在 0.3.0 中打开。自动备份只保留一个文件并随时覆盖，默认也在这个目录里；可以把备份位置改到另一块磁盘，或用“导出…”保存某一天的副本。卸载应用不会删除资料和备份；需要时手动删除上述目录和你自选的备份位置，并在“日历”应用中删除“Horizon”日历。
