@@ -2,16 +2,17 @@
 
 ## Compatibility
 
-- Download: `Horizon-0.4.0-macOS-universal.zip`.
+- Download: `Horizon-0.4.1-macOS-universal.zip`.
 - Includes native `arm64` and `x86_64` executables for Apple silicon and Intel Macs.
 - Both executable slices have a macOS 15.0 minimum deployment target. This is a build target, not a claim of testing every supported OS.
 - Checked on the development Apple silicon Mac. Intel hardware, older macOS, and a separate clean Mac have not been tested.
+- Free for personal, non-commercial use only; see [Usage Terms](USAGE.md).
 - The app is self-contained. No Xcode or Horizon account is needed. The optional AI secretary needs Claude Code or Codex, which you install and sign in to yourself (see below).
 - This preview is ad-hoc signed with hardened runtime; it has no Developer ID identity or Apple notarization. Since 0.4.0 it does not use the App Sandbox, so that the secretary can start your Claude Code or Codex.
 
 ## Install and First Launch
 
-1. Download the app ZIP from [v0.4.0](https://github.com/B0yangWong/Horizon-Releases/releases/tag/v0.4.0). The “Source code” assets are documentation archives, not app installers.
+1. Download the app ZIP from [the latest release](https://github.com/B0yangWong/Horizon-Releases/releases/latest). The “Source code” assets are documentation archives, not app installers.
 2. Extract and move `Horizon.app` into Applications. Do not run it from inside the archive or from Downloads: in-app updates need a folder Horizon can write to.
 3. Open the app. If macOS cannot verify the developer, only proceed if you trust this release. After the first attempt, follow [Apple's manual instructions](https://support.apple.com/en-us/102445) under System Settings → Privacy & Security → Open Anyway, if available. Managed Macs may forbid this. Do not disable Gatekeeper globally or use a script to remove download quarantine.
 4. A warning that the app is damaged or will harm your computer is a reason to stop and report the problem, not an instruction to bypass it.
@@ -51,7 +52,7 @@ Optional settings on the same page: About me and term dates, how often it may wr
 Download `SHA256SUMS.txt` from the same release. In Terminal, change to the download folder and run:
 
 ```sh
-shasum -a 256 Horizon-0.4.0-macOS-universal.zip
+shasum -a 256 Horizon-0.4.1-macOS-universal.zip
 ```
 
 Compare the result with the ZIP's entry in `SHA256SUMS.txt`. This detects disagreement with the published file; it is not a security audit or Apple approval. In-app updates are additionally checked against the developer's signing key.
@@ -66,7 +67,7 @@ Quit the app and move `Horizon.app` to the Trash. Removing the app does not remo
 
 ## 中文安装要点
 
-下载带有 `macOS-universal.zip` 的应用压缩包，解压后拖入“应用程序”（不要在压缩包或“下载”文件夹里直接运行，应用内更新需要可写的位置）。安装包包含 Apple 芯片和 Intel 架构，最低构建目标为 macOS 15，但 Intel 真机、旧系统和另一台全新 Mac 尚未实测。
+从[最新版本页](https://github.com/B0yangWong/Horizon-Releases/releases/latest)下载带有 `macOS-universal.zip` 的应用压缩包（仅限个人、非商业使用，见[使用条款](USAGE.md)），解压后拖入“应用程序”（不要在压缩包或“下载”文件夹里直接运行，应用内更新需要可写的位置）。安装包包含 Apple 芯片和 Intel 架构，最低构建目标为 macOS 15，但 Intel 真机、旧系统和另一台全新 Mac 尚未实测。
 
 本版没有 Apple 开发者身份签名和公证，首次启动可能被拦截。确认信任下载后，仅按 [Apple 官方说明](https://support.apple.com/zh-cn/102445)手动允许；不要关闭系统安全检查、运行移除隔离标记的脚本，或绕过“将损害电脑”“已损坏”提示。从 0.4.0 起应用不再使用 App 沙盒，以便秘书能启动你安装的 Claude Code 或 Codex。
 

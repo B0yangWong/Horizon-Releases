@@ -2,85 +2,84 @@
 
 <p align="center"><img src="images/app-icon.png" width="96" alt="Horizon blue black-hole icon with a glowing checkmark"></p>
 
-<p align="center"><strong>A calm Mac planner for long-term goals, everyday tasks, and habits, with an optional AI secretary.</strong></p>
+<p align="center"><strong>A to-do app with an AI secretary that knows your day.</strong></p>
 
-<p align="center">Break big goals into small steps, plan your day next to your Apple Calendar, and keep habits going.</p>
+<p align="center">Your tasks, goals, habits, and Apple Calendar in one calm Mac app, plus a secretary that reads them, tells you what to do first, files what you jot down, and nudges you before things slip. It runs on <strong>your own</strong> Claude Code or Codex, with your own subscription.</p>
 
 <p align="center">
-  <a href="https://github.com/B0yangWong/Horizon-Releases/releases/download/v0.4.0/Horizon-0.4.0-macOS-universal.zip">Download for Mac</a> |
-  <a href="#features">Features</a> |
-  <a href="#ai-secretary-optional-bring-your-own-ai">AI secretary</a> |
-  <a href="INSTALL.md">Installation</a> |
+  <a href="https://github.com/B0yangWong/Horizon-Releases/releases/download/v0.4.1/Horizon-0.4.1-macOS-universal.zip"><strong>Download for Mac</strong></a> |
+  <a href="#meet-your-secretary">The secretary</a> |
+  <a href="#set-it-up-in-two-minutes">Set up AI</a> |
+  <a href="#the-planner-underneath">Planner features</a> |
   <a href="PRIVACY.md">Privacy</a> |
   <a href="README.zh-CN.md">中文说明</a>
 </p>
 
+<p align="center"><img src="images/secretary-chat-en.jpg" width="900" alt="Asking the secretary what to focus on this evening; it answers from the day's tasks, deadlines, and habits, with a button to add a task to My Day"></p>
+
+<p align="center"><sub>A real answer from the secretary (Claude Code, Sonnet) about invented sample tasks.</sub></p>
+
 ---
 
-Set a long-term goal, add short-term goals underneath it if you like, and link tasks and habits to them. Keep everyday lists such as groceries or homework next to them. My Day brings today's calendar, tasks, timed habits, and a countdown to what's coming up into one place, and Review shows what you got done this week or month. Tasks can repeat, remind you, and be jotted down or spoken from any app with a keyboard shortcut; search finds anything, and Undo takes back a slip. Undated tasks don't disappear: Horizon gently points out what has gone quiet. There is no Horizon account, subscription, or cloud service.
+## Meet Your Secretary
 
-If you want, an **AI secretary** can read your tasks, answer questions, write a morning brief, and file what you jot down. Horizon does not include an AI service: the secretary runs through **your own** Claude Code or Codex on your Mac, signed in with your own Claude or ChatGPT plan. It is **off until you turn it on**, and everything else works without it.
+Most to-do apps hold your list. Horizon's secretary **reads it, together with your calendar, habits, and goals, and helps you act on it**.
 
-This repository hosts the downloadable app, documentation, and synthetic demo images. Application source code remains private. **Download the app ZIP in Releases; GitHub's automatically generated “Source code” archives contain this documentation, not the application.**
-
-**0.4.0 preview · macOS 15 minimum build target · Universal (Apple silicon + Intel).** The Apple silicon build has been checked on the development Mac; Intel hardware, older macOS versions, and a separate clean-Mac first install have not been tested. The app is ad-hoc signed, without Developer ID signing or Apple notarization. macOS may block the first launch; read [Install and Open](INSTALL.md).
-
-## Features
-
-| Feature | What you can do |
+| | What it does for you |
 | --- | --- |
-| My Day | Today's calendar events sit at the top in time order (all-day first) and fold into one line. Below them: tasks you picked, tasks due or scheduled today, and timed habits in time order. Right-click an event to remove it from today. |
-| Countdown | At the top of My Day: the next few important due dates, goal deadlines, and calendar events that look like exams or deadlines, within 30 days, with the days left. |
-| Review | Tasks done this week or month compared with the one before, a bar for each day with its count, categories, goal progress, and habit check-ins. |
-| Goals | Long-term goals with optional short-term goals inside them and optional deadlines. Progress rolls up from tasks and short-term goals; a goals overview shows everything, including achieved and archived goals. |
-| Tasks | Steps, notes with pasted screenshots and attached files, a due date, importance, a goal, a list, a category, a time block on the calendar, and a reminder. Drag a task onto My Day, Important, Planned, a list, or a goal in the sidebar. |
-| Lists and categories | Your own lists, such as “Groceries” or “Homework”, each with a color and icon. All Tasks can be grouped by due date or by category; drag categories and tasks into your own order, with a line showing where they'll land. |
-| Repeating tasks | Daily, weekdays, weekly, monthly, yearly, or a custom rule such as every 2 weeks on Monday and Thursday. Completing one creates the next with its time and reminder. |
-| Reminders | “Remind me” 10 or 30 minutes before a task starts, or at a time you pick. Optional automatic reminders before scheduled tasks, on the morning a task is due, and at habit times. |
-| Quick capture | A global shortcut (⌃⌥N by default) opens a slim bar over any app. Type “Tomorrow 3pm call Alex !”, “every mon and thu gym”, or “每周一三五晚上8点 跑步 @运动” and Horizon fills in the date, time, repeat, importance, “#goal”, and “@list”. Optionally bring along the text selected in the app you're in, the selected mail in Mail or Outlook, or the page open in your browser. |
-| Voice capture | A second shortcut (⌃⌥V by default) turns what you say into a task. Each shortcut can be set to a tap or a hold, so one key combination can do both: tap to type, hold to talk. |
-| Search and Undo | ⌘F searches tasks (completed ones too), goals, habits, lists, and Apple Calendar events. ⌘Z takes back deletes, completions, date and list changes, calendar moves, and check-ins. |
-| Habits | Every day, on certain weekdays, or a number of times per week, with a 7-day check-in strip, streaks, and an optional set time. |
-| Calendar | Day, week, and month views. Drag tasks onto the grid to schedule them, or onto a day to make them due. Show or hide each calendar, grouped by account. |
-| Apple Calendar sync | Scheduled tasks, tasks with a due date, and timed habits are written to a “Horizon” calendar; moving, renaming, or deleting them in Apple Calendar updates Horizon. “Import from Calendar” adds upcoming events as tasks. Optional. |
-| Backup and updates | An automatic backup file plus one copy for each of the last 7 days, in a folder you can choose; JSON export and import. Horizon checks for new versions once a day (you can turn this off) and installs a signed update when you click. |
-| Comfort | English or Simplified Chinese (switchable in Settings), dates as words (“in 2 days”) or as dates, text size from 85% to 150%, keyboard navigation in task lists, Back and Forward between lists, and a sidebar you can reorder. |
+| **“What should I do first?”** | Ask in plain words. It answers from your actual tasks, deadlines, time blocks, streaks, and calendar, and suggests one clear order. Answers come as cards with buttons (add to My Day, set a reminder, move to a list, mark done) that change nothing until you click. You can send screenshots too. |
+| **Understands each task** | **Look at this** in a task reads its notes, steps, and attachments (PDFs, images, links), then tells you how important it is and why, the real deadline and requirements with where it found them, the next step, and steps when the task needs a plan. |
+| **Speaks up before things slip** | A morning brief, a reminder when something important is close, a question when a task looks stuck, a word of encouragement on a long streak. You set how often (never to up to 6 a day), quiet hours, and tone; it decides what's worth saying. If it said it would keep an eye on something, it reminds you. |
+| **Files what you jot down** | Press ⌃⌥N anywhere and type, or hold ⌃⌥V and speak. It's saved as a task at once, then the secretary files it: a task with the right date and category, an item on a list, a new goal, or something to remember about you. Bring along the selected text, mail, or web page from the app you're in. |
+| **Remembers and learns** | It keeps short memories about you (your term, your routine, how you like things) and builds on your “About me”. Thumbs up or down on any message; every three days it rewrites a short set of working rules from your feedback, which you can read and edit. |
+| **Sorts the pile** | In All Tasks grouped by category, **Sort with Secretary** puts tasks into categories such as homework, exams, meetings, applications. |
 
-## AI Secretary (Optional, Bring Your Own AI)
+**It suggests; you decide.** Nothing in your list changes without your click, except filing quick captures, which you can turn off.
 
-Horizon has no AI service of its own and no API keys. The secretary uses one of these command-line tools, installed and signed in on your Mac **by you**:
+## Set It Up in Two Minutes
+
+Horizon has **no AI service of its own, no API keys, and no AI subscription to buy from us.** The secretary uses one of these tools, installed and signed in on your Mac by you:
 
 | Tool | Account it uses | Install (in Terminal) | Sign in |
 | --- | --- | --- | --- |
 | [Claude Code](https://github.com/anthropics/claude-code) | A Claude plan that includes Claude Code | `brew install --cask claude-code` | `claude auth login` |
 | [Codex](https://github.com/openai/codex) | A ChatGPT plan that includes Codex | `brew install --cask codex` | `codex login` |
 
-Then open the secretary (the person icon in the toolbar) or **Settings → Secretary**, turn it on, and pick the tool and model. Horizon shows whether each tool is installed and signed in. Requests count against your own plan's usage limits; Horizon does not charge for them or see your sign-in.
+Then click the person icon at the top right of Horizon (or open **Settings → Secretary**), choose **Turn On**, pick the tool and model, and click **Test**. Horizon shows whether each tool is installed and signed in. Requests count against your own plan's usage; Horizon never sees your sign-in. Turn on **Open Horizon at login** so the secretary can reach you without you opening the app first.
 
-What it does once on:
+The secretary is **off until you turn it on**, and everything else in Horizon works without it.
 
-- **Chat:** ask about your tasks and schedule; answers come as cards with buttons (add to My Day, set a reminder, move to a list…) that change nothing until you click. You can paste pictures.
-- **Task briefs:** “Look at this” in a task reads its notes and attachments and suggests importance, deadlines, a next step, and steps when needed.
-- **Speaks up on its own, within your limits:** a morning brief, reminders about what's coming up, and the occasional question. Settings set how often (never to up to 6 a day), quiet hours, and tone.
-- **Files quick captures:** what you jot down is saved as a task right away, then the secretary may file it as a list item, a goal, or a memory instead.
-- **Learns from you:** thumbs up or down under each message; every three days it rewrites a short list of working rules you can see and edit.
+**What leaves your Mac:** while the secretary is on, each request sends what that job needs to Anthropic (Claude Code) or OpenAI (Codex) through the tool you chose: the relevant tasks with their notes, steps, and attached text or pictures; your lists, goals, categories, and habits; your Apple Calendar events (if connected) from a year back to two years ahead; your “About me”; the secretary's memories; and recent chat messages. Their terms and privacy policies apply. Horizon runs the tool with its own tools, plug-ins (MCP servers), and saved sessions turned off. Turn the secretary off at any time and nothing more is sent. Details: [Privacy](PRIVACY.md).
 
-**What leaves your Mac:** while the secretary is on, each request sends what that job needs to Anthropic (Claude Code) or OpenAI (Codex) through the tool you chose: the relevant tasks with their notes, steps, and attached text or pictures; your lists, goals, categories, and habits; your Apple Calendar events (if connected) from a year back to two years ahead; the “About me” text you write; the secretary's memories; and recent chat messages. Their own terms and privacy policies apply to that data. Horizon runs the tool with its own tools, plug-ins (MCP servers), and saved sessions turned off. Turn the secretary off at any time and nothing more is sent. See [Privacy](PRIVACY.md).
+**Already live in Claude Code or Codex?** Settings → Secretary → **Add to Claude Code / Add to Codex** lets those tools, when *you* use them in Terminal, look at your Horizon tasks and make the changes you ask for.
 
-Optionally, **Settings → Secretary → Use Horizon in Claude and Codex** adds Horizon to your own Claude Code or Codex, so that when *you* chat with them in Terminal they can look at your tasks and make the changes you ask for.
+## The Planner Underneath
 
-<p align="center"><img src="images/secretary-en.jpg" width="900" alt="The secretary panel before it is turned on, explaining that it uses your own Claude Code or Codex"></p>
-
-## Preview
-
-Screenshots use in-memory, invented sample goals, tasks, and habits, with Apple Calendar turned off. They contain no personal data, and the example content is not included in a fresh installation. My Day, Review, the secretary panel, and the Chinese screenshot come from the 0.4.0 build; the rest from 0.3.0, which looks the same in those views.
+The secretary works on top of a complete, fast, native to-do app that is pleasant on its own.
 
 <p align="center"><img src="images/my-day-en.jpg" width="900" alt="My Day with a countdown, scheduled tasks, timed habits, and suggestions for today"></p>
+
+| Feature | What you can do |
+| --- | --- |
+| My Day | Today's calendar events at the top in time order (foldable); below them, tasks you picked, tasks due or scheduled today, and timed habits. A countdown shows the next important deadlines, and suggestions bring back tasks that have gone quiet. |
+| Goals | Long-term goals with optional short-term goals and deadlines; progress rolls up from tasks. Link tasks and habits to them. |
+| Tasks | Steps, notes with pasted screenshots and files, due dates, importance, a list, a category, a calendar time block, repeats, and reminders. |
+| Quick capture | ⌃⌥N in any app. “Tomorrow 3pm call Alex !”, “every mon and thu gym”, or “每周一三五晚上8点 跑步 @运动”: dates, times, repeats, importance, `#goal`, and `@list` are recognized as you type. |
+| Voice capture | ⌃⌥V. Each shortcut can be a tap or a hold, so one key combination can do both: tap to type, hold to talk. |
+| Review | What you finished this week or month, day by day, by category and goal, plus habit check-ins. |
+| Lists and categories | Your own lists (Groceries, Homework…). Group All Tasks by due date or category and drag everything into your own order. |
+| Habits | Daily, on certain weekdays, or N times a week, with streaks and an optional set time. |
+| Calendar | Day, week, and month views; drag tasks onto the grid to schedule them. Two-way sync with a “Horizon” calendar in Apple Calendar (optional). |
+| Search and Undo | ⌘F finds tasks, goals, habits, lists, and calendar events; ⌘Z takes back deletes, completions, moves, and check-ins. |
+| Backups and updates | An automatic backup plus one copy for each of the last 7 days; JSON export. Signed in-app updates. |
+| Comfort | English or Chinese, dates as words or dates, text size 85–150%, full keyboard navigation in task lists. |
 
 <p align="center"><img src="images/review-en.jpg" width="900" alt="Review for this month: tasks done each day, categories, goal progress"></p>
 
 <details>
-<summary>Task panel, search, goals, month calendar, habits, and Chinese interface</summary>
+<summary>More screenshots: task panel, search, goals, month calendar, habits, the secretary before it's turned on</summary>
+
+<p align="center"><img src="images/secretary-en.jpg" width="900" alt="The secretary panel before it is turned on, explaining that it uses your own Claude Code or Codex"></p>
 
 <p align="center"><img src="images/task-en.jpg" width="900" alt="A task that repeats weekly, with a reminder 30 minutes before it starts"></p>
 
@@ -94,50 +93,46 @@ Screenshots use in-memory, invented sample goals, tasks, and habits, with Apple 
 
 <p align="center"><img src="images/habits-en.jpg" width="900" alt="Habits with weekly check-in dots and streaks"></p>
 
-<p align="center"><img src="images/my-day-zh.jpg" width="900" alt="My Day in Simplified Chinese"></p>
-
 </details>
 
-## Install and Open
+All screenshots use invented, in-memory sample data with Apple Calendar turned off; they contain no personal data. The secretary chat is a real answer to that sample data. The task panel, search, goals, calendar, and habits screenshots come from 0.3.0 and look the same today.
 
-1. Download [Horizon-0.4.0-macOS-universal.zip](https://github.com/B0yangWong/Horizon-Releases/releases/download/v0.4.0/Horizon-0.4.0-macOS-universal.zip) from the [0.4.0 release](https://github.com/B0yangWong/Horizon-Releases/releases/tag/v0.4.0).
-2. Unzip it and move `Horizon.app` into Applications. In-app updates need it there.
-3. Open the app. If macOS blocks an unverified developer, review the download and decide whether to trust it. Use only the manual exception described in [Apple's instructions](https://support.apple.com/en-us/102445). If the warning says the app will harm your computer or is damaged, stop and report it. Do not disable system security checks or run a quarantine-removal command.
-4. Horizon asks once whether it may send notifications (for reminders). Apple Calendar, the microphone and speech recognition, and reading other apps' selections are asked for only when you first use them. All are optional.
+## Install
 
-**Updating from 0.3.0 or earlier:** quit Horizon, replace the app in Applications, and open it. On first launch 0.4.0 copies your data out of the old sandbox folder and leaves that folder untouched as a backup. From 0.4.0 on, click **Update to …** at the bottom of the sidebar, or **Install … and Reopen** in Settings → General, and Horizon updates itself.
+**0.4.1 preview · macOS 15 or later · Universal (Apple silicon + Intel) · free for personal use.**
 
-`SHA256SUMS.txt` accompanies the release for checking download integrity. It does not verify publisher identity or imply Apple approval. See [Installation and Compatibility](INSTALL.md) for details.
+1. Download [Horizon-0.4.1-macOS-universal.zip](https://github.com/B0yangWong/Horizon-Releases/releases/download/v0.4.1/Horizon-0.4.1-macOS-universal.zip) from the [latest release](https://github.com/B0yangWong/Horizon-Releases/releases/latest). GitHub's “Source code” archives are documentation, not the app.
+2. Unzip it and move `Horizon.app` into Applications (in-app updates need it there).
+3. Open it. Horizon is ad-hoc signed, without Developer ID or Apple notarization, so macOS may block the first launch. If you trust the download, use only the manual exception in [Apple's instructions](https://support.apple.com/en-us/102445). If macOS says the app is damaged or will harm your computer, stop and report it. Do not disable system security checks.
+4. Horizon asks once for notifications (reminders). Calendar, microphone, and reading other apps' selections are asked for only when you first use them. All optional.
 
-## Everyday Controls
+**Updating:** from 0.4.0 on, click **Update to …** at the bottom of the sidebar. From 0.3.0 or earlier: quit, replace the app, open; your data is copied out of the old sandbox folder on first launch. Check downloads against `SHA256SUMS.txt` (it checks the file, not the publisher). The Apple silicon build has been checked on the development Mac; Intel Macs, older macOS, and a clean-Mac first install are untested. See [Installation](INSTALL.md) and [Validation](VALIDATION.md).
+
+## Keyboard
 
 | Action | Shortcut |
 | --- | --- |
-| Quick capture from any app | `Control + Option + N` (changeable, tap or hold) |
-| Voice capture from any app | `Control + Option + V` (changeable, tap or hold) |
-| Jump to “Add a task” in the current list | `Command + N` |
-| New goal / new list | `Command + Shift + N` / `Command + Shift + L` |
-| Search | `Command + F` |
-| Undo / Redo | `Command + Z` / `Command + Shift + Z` |
-| Back / Forward between lists | `Command + [` / `Command + ]` |
-| Sidebar lists, in their current order | `Command + 1` … `Command + 8` |
-| Complete / My Day / Important for the selected task | `Command + D` / `Command + T` / `Command + I` |
-| Delete the selected task | `Command + Delete` |
-| Bigger / smaller / default text | `Command + +` / `Command + −` / `Command + 0` |
-| Close the task panel | `Escape`, or click empty space |
-| Close the secretary | Click empty space, or its close button |
-| Settings | `Command + Comma` |
-
-When adding a task, dates (“tomorrow”, “周五”, “this weekend”, “11/20”), times (“3pm”, “下午3点”), lengths (“1h”, “半小时”), repeats (“every mon and wed”, “每周一三五”, “工作日”), `!` for important, `#` plus part of a goal's name, and `@` plus part of a list's name are recognized and shown as chips before you press Return.
+| Quick capture / voice capture from any app | `⌃⌥N` / `⌃⌥V` (changeable, tap or hold) |
+| Add a task in the current list | `⌘N` |
+| New goal / new list | `⇧⌘N` / `⇧⌘L` |
+| Search, Undo, Redo | `⌘F`, `⌘Z`, `⇧⌘Z` |
+| Back / Forward between lists | `⌘[` / `⌘]` |
+| Sidebar lists in order | `⌘1` … `⌘8` |
+| Selected task: complete / My Day / important / delete | `⌘D` / `⌘T` / `⌘I` / `⌘⌫` |
+| In a task list | `↑` `↓` move, `⇧↑` `⇧↓` pick several, `Space` complete, `Return` open |
+| Text size | `⌘+` / `⌘−` / `⌘0` |
+| Close the task panel / the secretary | `Esc` or click empty space / click empty space |
 
 ## Your Data Stays on Your Mac
 
-Goals, tasks, lists, habits, attachments, the secretary's chat and memories, and backups are stored locally in `~/Library/Application Support/Horizon/`, and settings in `~/Library/Preferences/app.horizon.mac.plist`. There is no Horizon account, advertising, analytics, or cloud sync. Horizon itself connects to the internet only to check GitHub for updates once a day (switchable) and to download an update you choose to install. Data leaves your Mac only through features you turn on: the AI secretary (to Anthropic or OpenAI, through your own tool), Apple Calendar (synced by Apple or your calendar provider like any calendar), and voice capture when your language can't be recognized on the Mac (Apple's speech service). See [Privacy](PRIVACY.md).
+Tasks, goals, habits, attachments, the secretary's chat and memories, and backups are stored locally in `~/Library/Application Support/Horizon/`. There is no Horizon account, advertising, analytics, or cloud sync. Horizon itself only contacts GitHub, to check for updates once a day (switchable) and download one you choose. Data leaves your Mac only through features you turn on: the AI secretary (through your own tool, to Anthropic or OpenAI), Apple Calendar (synced by your calendar provider), and voice capture when your language can't be recognized on the Mac (Apple's speech service). See [Privacy](PRIVACY.md) and [Security](SECURITY.md).
 
-## Current Limits and Feedback
+## Limits and Feedback
 
-Horizon is a preview for local Mac use. It does not include an iPhone app, sync between Macs, Apple Reminders integration, or collaboration. The secretary needs Horizon running to write to you (“Open Horizon at login” helps), can only be as good as the model you pick, and can be wrong: it suggests, and changes nothing without a click, except filing quick captures when that option is on. Date recognition follows simple rules and can misread unusual phrasing, which is why it is shown before adding. See [Validation](VALIDATION.md) for what has and has not been checked.
+Horizon is a preview for one Mac: no iPhone app, sync between Macs, Apple Reminders integration, or collaboration. The secretary can only write while Horizon is running, is only as good as the model you pick, and can be wrong. Date recognition follows simple rules and shows what it understood before adding.
 
-For [bug reports and feature requests](https://github.com/B0yangWong/Horizon-Releases/issues/new/choose), include your app version, macOS version, and steps using invented content. Issues are public: do not attach real task lists, calendar details, backup files, chat transcripts, or screenshots showing personal information. Read [Security](SECURITY.md) before reporting a vulnerability.
+For [bug reports and ideas](https://github.com/B0yangWong/Horizon-Releases/issues/new/choose), include your app version, macOS version, and steps using invented content. Issues are public: never attach real tasks, calendar details, chat transcripts, backups, or personal screenshots. See [Security](SECURITY.md) for vulnerabilities and [Changelog](CHANGELOG.md) for what's new.
 
-The app is free to download and run on your own Mac. This repository does not grant an open-source license to the application or icon. See [Usage](USAGE.md) and [Changelog](CHANGELOG.md).
+## Terms
+
+**Free for personal, non-commercial use only.** Selling Horizon, charging for it, redistributing it (including modified or renamed copies), or using it in any paid product or service is not permitted without written permission. The source code is private and no open-source license is granted. Full terms: [Usage Terms](USAGE.md).

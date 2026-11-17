@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.1 — The secretary speaks your language
+
+- The secretary now answers in the language Horizon is set to. Before, its instructions defaulted to Chinese, so it could reply in Chinese in the English interface. If you write to it in another language, it follows you.
+- Usage terms now state plainly that Horizon is free for personal, non-commercial use only: no selling, charging, redistributing (including modified or renamed copies), or use in paid products or services without written permission. See [Usage Terms](USAGE.md).
+- 0.4.0 users get this through the in-app update (“Update to 0.4.1” at the bottom of the sidebar).
+
+中文：秘书现在按 Horizon 的界面语言回答（之前它的指令默认中文，英文界面下也可能用中文回答；你用别的语言写时它会跟着你）。使用条款明确写明仅限个人、非商业使用：未经书面许可，不得出售、收费、再分发（包括修改或改名后的版本）或用于付费产品和服务。0.4.0 用户可通过应用内更新（左侧栏底部“更新到 0.4.1”）获得。
+
 ## 0.4.0 — An optional AI secretary, voice capture, Review, and in-app updates
 
 - **AI secretary (optional, off until you turn it on):** works through your own Claude Code or Codex, signed in with your own Claude or ChatGPT plan; Horizon has no AI service or API keys. It chats in a panel on the right with answers as cards and buttons, reads a task's notes and attachments, writes a morning brief, looks weekly at what keeps slipping, and may write on its own within the limits you set (how often, quiet hours, tone). It knows your calendar, habits, lists, goals, and an “About me” text, keeps memories, and learns from thumbs up and down. It suggests; nothing changes without a click. See the README and [Privacy](PRIVACY.md) for what is sent where.
