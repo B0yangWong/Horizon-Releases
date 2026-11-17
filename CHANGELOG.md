@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.4.0 — An optional AI secretary, voice capture, Review, and in-app updates
+
+- **AI secretary (optional, off until you turn it on):** works through your own Claude Code or Codex, signed in with your own Claude or ChatGPT plan; Horizon has no AI service or API keys. It chats in a panel on the right with answers as cards and buttons, reads a task's notes and attachments, writes a morning brief, looks weekly at what keeps slipping, and may write on its own within the limits you set (how often, quiet hours, tone). It knows your calendar, habits, lists, goals, and an “About me” text, keeps memories, and learns from thumbs up and down. It suggests; nothing changes without a click. See the README and [Privacy](PRIVACY.md) for what is sent where.
+- **Quick capture:** the secretary can file what you jot down as a task, list item, goal, or memory (it's saved as a task first, so nothing is lost). Optionally bring along the selected text from the app you're in, the selected mail in Mail or Outlook, or the browser page; **Services → Send to Horizon** too.
+- **Voice capture:** a shortcut (⌃⌥V) turns speech into a task, recognized on the Mac when your language allows. Every shortcut can be a tap or a hold, so one key combination can do both.
+- **Review:** a new page with tasks done this week or month, a bar per day with its count, categories, goal progress, and habits.
+- **My Day:** today's calendar events in their own foldable section at the top, in time order. Tasks due or scheduled today count as being on My Day.
+- **Tasks and All Tasks:** paste screenshots and files into notes; group All Tasks by due date or category, drag categories and tasks into order with a line showing where they'll land; keyboard navigation in task lists (↑ ↓, Space, Return…).
+- **Settings:** language (English or Chinese) in Settings → General, dates as words (“in 2 days”) or as dates, automatic update checks.
+- **In-app updates:** Horizon checks once a day and installs a signed update when you click. Updating by hand still works.
+- **Backups:** besides the automatic backup, the first copy of each of the last 7 days is kept; backups also hold the secretary's memories, the category order, and attachments' pasted text.
+- **Outside the App Sandbox:** needed for the secretary to start your AI tool. Data moves to `~/Library/Application Support/Horizon/` on first launch; the old sandbox folder is left as it was.
+
+中文：新增可选的 AI 秘书（默认关闭，需自行打开；通过你自己的 Claude Code 或 Codex、用你自己的 Claude 或 ChatGPT 订阅工作，Horizon 不带 AI 服务也不用 API 密钥）：右侧聊天面板以卡片和按钮回答、读懂任务备注和附件、早间简报、每周回看拖延事项，并在你设定的频率、免打扰时段和语气范围内主动发消息；它了解你的日历、习惯、清单、目标和“关于我”，会记忆，也会根据点赞点踩改进，只提建议、不点不改。随手记可由秘书归档为任务、清单项、目标或记忆，并可带上当前 app 选中的文字、Mail/Outlook 选中的邮件或浏览器页面。新增语音随手记（⌃⌥V），每个快捷键可设短按或长按。新增“回顾”页。“我的一天”的日程移到顶部独立可折叠区域，今天到期或排程的任务算作在“我的一天”。备注可粘贴截图和文件；“全部任务”可按截止日期或类别分组并拖动排序（显示插入线）；任务列表支持键盘操作。设置里可切换中英文、日期显示方式和自动检查更新。新增应用内更新。备份额外保留最近 7 天每天一份，并包含秘书记忆、类别顺序和附件文字。应用不再使用沙盒，首次启动会把资料移到 `~/Library/Application Support/Horizon/`，旧目录保持不变。
+
 ## 0.3.0 — Lists, search, undo, and a deadline countdown
 
 - Lists: your own lists (for example “Groceries” or “Homework”) under the smart lists, with a name, color, and icon, drag to reorder, and “@list” when adding a task. A task can be in a list and linked to a goal. Lists are part of backups; older backups still restore.
